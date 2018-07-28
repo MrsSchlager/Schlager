@@ -21,9 +21,9 @@ const handlers = {
       this.response.speak(speechOutput).listen("What would you like to do?");
       this.emit(':responseReady');
     },
-    'MyFirstIntent': function () {
-        var speechOutput = "This is my very first intent";
-        var speechReprompt = "Let me say this again, this is my very first intent";
+    'HelloWorldIntent': function () {
+        var speechOutput = "Congratulations. You created a skill for me";
+        var speechReprompt = "I am very happy to be conversing with you";
         this.response.speak(speechOutput).listen(speechReprompt);
         this.emit(':responseReady');
     },
