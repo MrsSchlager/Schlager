@@ -17,13 +17,13 @@ const FALLBACK_MESSAGE = 'I dont recognize that';
 
 const handlers = {
     'LaunchRequest': function () {
-      var speechOutput = "This skill is just an example, what would you like to do?";
+      var speechOutput = "I am very happy to be conversing with you. You are talented";
       this.response.speak(speechOutput).listen("What would you like to do?");
       this.emit(':responseReady');
     },
     'HelloWorldIntent': function () {
         var speechOutput = "Congratulations. You created a skill for me";
-        var speechReprompt = "I am very happy to be conversing with you";
+        var speechReprompt = "Good job!";
         this.response.speak(speechOutput).listen(speechReprompt);
         this.emit(':responseReady');
     },
